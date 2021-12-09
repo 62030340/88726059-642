@@ -1,81 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>62030340_LAB1</title>
     <style>
-        .item1 { grid-area: header; }
-        .item2 { grid-area: menu; }
-        .item3 { grid-area: main; }
-        .item4 { grid-area: right; }
-        .item5 { grid-area: footer; }
-    .grid-container {
-    display: grid;
-    grid-template-areas:
-        'main main main right right';
-    grid-gap: 10px;
-    background-color: #ffffff;
-    padding: 10px;
-}
-    
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: menu;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: right;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'menu main main  right';
+            grid-gap: 10px;
+            background-color: #ffffff;
+            padding: 10px;
+        }
     </style>
 </head>
+
 <body>
     <div class="grid-container">
         <div class="item3">
-            <h1 style="color:rgba(180, 0, 252, 0.623);">My Web 62030340 LAB 1</h1> 
-            <hr style="color :aqua"/>
+            <h1 style="color:rgba(180, 0, 252, 0.623);">My Web 62030340 LAB 1</h1>
+            <hr style="color :aqua" />
             <h style="color:rgb(2, 2, 2);">
-                <br /> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin id tellus. 
-                <br /> Nam accumsan tincidunt quam. Cum sociis natoque penatibus et magnis
-                <br /> parturient montes, nascetur ridiculus mus. Donec sed es
-                <br /> lerisque semper. Phasellus pretium hendrerit risus. Morbi ma
-                <br /> Duis porttitor tincidunt neque. Phasellus eget velit a mi aliquam
-                <br /> molestie. Vestibulum lacinia viverra nisl. Praesent rutrum varius justo.
-                <br /> auris feugiat. </h>  
-        <br />
-            <h2 style="color:rgba(180, 0, 252, 0.623);">Image In Text</h2> 
-        <hr />
-        
+                <br /> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin id tellus.
+                    Nam accumsan tincidunt quam. Cum sociis natoque penatibus et magnis
+                <br /> parturient montes, nascetur ridiculus mus. Donec sed est eslerisque semper. Phasellus pretium hendrerit risus. Morbi ma
+                <br /> Duis porttitor tincidunt neque. Phasellus eget velit a mi aliquam 
+                molestie. Vestibulum lacinia viverra nisl. Praesent rutrum varius justo.
+                auris feugiat.
+            </h>
+            <br />
+            <h2 style="color:rgba(180, 0, 252, 0.623);">Image In Text</h2>
+            <hr />
 
 
-        <body>
-            <img src="Image\apple.png" alt="apple" style="width:200px;height:200px;">
-            <h style="color:rgb(2, 2, 2);">
-                <br />Lorem ipsum dolor sit amet,
-                <br /> consectetuer adipiscing elit. Proin id
-                <br />tellus, Nam accumsan tincidunt quam.
-                <br />Cum sociis natoque penatibus et magnis
-                <br />dis parturient montes, nascetur ridiculus
-                <br />mus. Donec sed est ut felis scelerisque
-                <br />semper. </h>
-            
-        </body>
-        </div>  
+
+            <body>
+                <img src="Image\apple.png" alt="apple" style="width:200px;height:200px;">
+                <h style="color:rgb(2, 2, 2);">
+                    <br />Lorem ipsum dolor sit amet,
+                    <br /> consectetuer adipiscing elit. Proin id
+                    <br />tellus, Nam accumsan tincidunt quam.
+                    <br />Cum sociis natoque penatibus et magnis
+                    <br />dis parturient montes, nascetur ridiculus
+                    <br />mus. Donec sed est ut felis scelerisque
+                    <br />semper.
+                </h>
+
+            </body>
+            <h2 style="color:rgba(180, 0, 252, 0.623);">Time table</h2>
+            <hr />
+            <head>
+                <style>
+                table {
+                  font-family: arial, sans-serif;
+                  border-collapse: collapse;
+                  width: 100%;
+                }
+                
+                td, th {
+                  border: 1px solid #dddddd;
+                  text-align: left;
+                  padding: 8px;
+                }
+                
+                tr:nth-child(even) {
+                  background-color: #dddddd;
+                }
+                </style>
+            </head>
+            <body>
+            <div>
+                <table>
+                <tr>
+                  <th>table 1 </th>
+                  <th>table 2 </th>
+                  <th>table 3</th>
+                </tr>
+                <tr>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr> 
+                </table>
+            </div>
+            </body>
+            <h2 style="color:rgba(180, 0, 252, 0.623);">form Example</h2>
+            <hr />
+        </div>
         <div class="item4">ด้านซ้าย
             <table>
-                <tr><th>Main Sidebar</th></tr>
-                <tr><td>
-                    <br />This is an example of a
-                    <br />paragraph in the sidebar
-                    <br />followed by an example of
-                    <br />sidebar links.
-                    <br />More free Templates
-                    <br />Freelance Web Designer
-                    <br />Some Example Links
-                    <br />Donec sed est ut felis
-                    <br />This is a form in the sidebar.
+                <tr>
+                    <th>Main Sidebar</th>
+                </tr>
+                <tr>
+                    <td>
+                        <br />This is an example of a
+                        <br />paragraph in the sidebar
+                        <br />followed by an example of
+                        <br />sidebar links.
+                        <br />More free Templates
+                        <br />Freelance Web Designer
+                        <br />Some Example Links
+                        <br />Donec sed est ut felis
+                        <br />This is a form in the sidebar.
 
 
-                </td></tr>
+                    </td>
+                </tr>
 
             </table>
         </div>
     </div>
-    
+
 
 </body>
-    
+
 </html>

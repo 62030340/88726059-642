@@ -1,0 +1,170 @@
+<!-- การออกแบบหน้าเว็บ LAB01_BY_62030340_(ICN) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=he, initial-scale=1.0">
+    <title>62030340_ICN</title>
+
+    <!--  คำสั่งนี้เพื่อการจัดว่างโคร้งสร้าหน้าเว็บ -->
+    <style>
+        /*  ส่วนหัว */
+        .item1 {
+            grid-area: header;
+        }
+
+        /*  ส่วนด้านซ้าย */
+        .item2 {
+            grid-area: menu;
+        }
+
+        /*  ส่วนตัว */
+        .item3 {
+            grid-area: main;
+        }
+
+        /*  ส่วนขวา */
+        .item4 {
+            grid-area: right;
+        }
+
+        /*  ส่วนล่าง */
+        .item5 {
+            grid-area: footer;
+        }
+
+        /*   ใช้เพื่อการจัดว่างโคร้งสร้าหน้าเว็บ  */
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+            /* สไตล์ การจัดโครงสร้าง */
+                'menu main main right right';
+            
+            grid-gap: 10px;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+
+        /* ใช้เพื่อการจัดการแอคชั่น LINK */
+        a.one:link {
+            color: #000000;
+        }
+
+        a.one:visited {
+            color: #0000ff;
+        }
+
+        a.one:hover {
+            color: #ff0000;
+        }
+    </style>
+
+</head>
+<!-- ส่วนการจัดการเนื้อหาสู้หน้าเพจ -->
+
+<body>
+    <div class="grid-container">
+
+        <!-- การจัดการเนื้อหาของเพจ ด้านซ้าย ส่วนตัว -->
+        <div class="item3">
+            <!-- การจัดการเนื้อหาส่วนตรงกลาง ส่วนตัว -->
+            <body>
+                <!-- ส่วนตัว 1 -->
+                <h1>My side </h1>
+                <hr size="5" color="green" />
+
+                <!-- ส่วนตัว 2 -->
+                <h1>Image In Text </h1>
+                <hr size="5" color="green" />
+
+                <!-- ส่วนตัว 3 -->
+                <h1>Time Table </h1>
+                <hr size="5" color="green" />
+
+                <!-- ส่วนตัว 4 -->
+                <h1>Form Example </h1>
+                <hr size="5" color="green" />
+
+
+            </body>
+        </div>
+        <!-- การจัดการเนื้อหาของเพจ ด้านขวา -->
+        <div class="item4">
+
+            <!-- การจัดการเนื้อหาส่วนขวา -->
+
+            <body>
+                <!-- การจัดการข้อมูลแบบตาราง -->
+                <table bgcolor="#dcdcdc" width="50%" hidgth="200%">
+                    <br /><br />
+                    &nbsp;
+                    <!-- ส่วนขวา 1 -->
+                    <tr>
+                        <th style="border:2px solid #c5c5c5;">ส่วนข้อมูลด้านขวา </th>
+                    </tr>
+                    <!-- ส่วนขวา 2 -->
+                    <tr>
+                        <td style="border:2px solid #c5c5c5;">
+                            <br /> 1
+                            <br /> 2
+                            <br /> 3
+                            <br /> 4
+                            <br /> 5
+                            <br /> 6
+                            <br /> 7
+                            <ul>
+                                <li>
+                                    <p><b><a class="one" href="default.asp" target="_blank">link</a></b></p>
+                                </li>
+                                <li>
+                                    <p><b><a class="one" href="default.asp" target="_blank">link</a></b></p>
+                                </li>
+                                <li>
+                                    <p><b><a class="one" href="default.asp" target="_blank">link</a></b></p>
+                                </li>
+                                <li>
+                                    <p><b><a class="one" href="default.asp" target="_blank">link</a></b></p>
+                                </li>
+                                <li>
+                                    <p><b><a class="one" href="default.asp" target="_blank">link</a></b></p>
+                                </li>
+                            </ul>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+
+                        </td>
+                    </tr>
+                    <!-- ส่วนขวา 3 -->
+                    <tr style="background-color:#ffffff;">
+                        <td style="border:2px solid #c5c5c5;">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+            </body>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

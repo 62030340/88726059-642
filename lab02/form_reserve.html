@@ -13,47 +13,52 @@
         <table width="50%">
             <tr>
                 <td> <label for="name">Room type:</label></td>
-                <td> 
-                    <select name="roomtype" cols="100" >
+                <td>
+                    <select name="roomtype" style="width:40%">
+                        <option value="please select">please select</option>
                         <option value="Standard">Standard</option>
                         <option value="Luxury">Luxury</option>
                         <option value="Deluxe">Deluxe</option>
                     </select>
-                    
+
                 </td>
             </tr>
             <tr>
                 <td> <label for="name">Number of Guests</label></td>
-                <td> 
-                    <select name="numguest" ; >
-                    <option value="1-2">1-2</option>
-                    <option value="3-4">3-4</option>
-                    <option value="5-6">5-6</option>
-                    <option value="6-8">6-8</option>
+                <td>
+                    <select name="numguest" style="width:40%" >
+                        <option value="please select" >please select</option>
+                        <option value="1-2">1-2</option>
+                        <option value="3-4">3-4</option>
+                        <option value="5-6">5-6</option>
+                        <option value="6-8">6-8</option>
                     </select>
-            </td>
+                </td>
             </tr>
             <tr>
                 <td> <label for="name">Name</label></td>
-                <td> <input type="text" name="fame" id="fame">
-                     <input type="text" name="lname" id="lname"></td>
+                <td> <input type="text" name="fame" id="fame" >
+                    <input type="text" name="lname" id="lname">
+                </td>
             </tr>
 
             <tr>
                 <td> <label for="name">Email</label></td>
                 <td> <input type="text" name="email" id="email"></td>
-            </tr><tr>
+            </tr>
+            <tr>
                 <td> <label for="name">Arrival</label></td>
-                <td> <input type="text" name="name" id="name"></td>
+                <td> <input type="date" name="arrivaldate"> <input type="time" name="arrivaldtime"></td>
             </tr>
             <tr>
                 <td> <label for="name">Departure</label></td>
-                <td> <input type="text" name="name" id="name"></td>
+                <td> <input type="date" name="Departuredate"> <input type="time" name="Departuretime"></td>
             </tr>
             <tr>
                 <td> <label for="name">Free pickup</label></td>
                 <td> <input type="radio" name="pickup" id="pickup" value="Yes">Yes, Sure! <br />
-                    <input type="radio" name="pickup" id="pickup" value="No">No,I already a cal.</td>
+                    <input type="radio" name="pickup" id="pickup" value="No">No,I already a cal.
+                </td>
             </tr>
             <tr>
                 <td> <label for="name">Flight Number</label></td>
@@ -63,7 +68,7 @@
             <tr>
                 <td> Other requests</td>
                 <td> <Textarea name="otherreq" id="otherreq" rows="5" cols="50"></Textarea> <br>
-                    
+
                 </td>
 
             </tr>
@@ -72,7 +77,7 @@
                 <td> <input type="submit" value="Complete Reservation"></td>
 
             </tr>
-        
+
         </table>
 
     </form>

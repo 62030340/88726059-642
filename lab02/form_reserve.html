@@ -26,8 +26,8 @@
             <tr>
                 <td> <label for="Number of Guests">Number of Guests</label></td>
                 <td>
-                    <select name="numguest" style="width:60%" >
-                        <option value="please select" >please select</option>
+                    <select name="numguest" style="width:60%">
+                        <option value="please select">please select</option>
                         <option value="1-2">1-2</option>
                         <option value="3-4">3-4</option>
                         <option value="5-6">5-6</option>
@@ -37,14 +37,14 @@
             </tr>
             <tr>
                 <td> <label for="name">Name</label></td>
-                <td> <input type="text" name="fame" id="fame" >
-                    <input type="text" name="lname" id="lname">
+                <td> <input type="text" placeholder="First Name" name="fame" id="fame">
+                    <input type="text" placeholder="last Name" name="lname" id="lname">
                 </td>
             </tr>
 
             <tr>
                 <td> <label for="Email">Email</label></td>
-                <td> <input type="text" name="email" id="email" style="width:58%"></td>
+                <td> <input type="text" placeholder="hotel@Booking.com" name="email" id="email" style="width:58%"></td>
             </tr>
             <tr>
                 <td> <label for="Arrival">Arrival</label></td>
@@ -62,19 +62,21 @@
             </tr>
             <tr>
                 <td> <label for="Flight Number">Flight Number</label></td>
-                <td> <input type="text" name="flightnum" id="flightnum"></td>
+                <td> <input type="text" placeholder="C1209" name="flightnum" id="flightnum"></td>
             </tr>
 
             <tr>
                 <td> Other requests</td>
-                <td> <Textarea name="otherreq" id="otherreq" rows="5" cols="50"></Textarea> <br>
+                <td> <Textarea name="otherreq" placeholder="Other requests" id="otherreq" rows="5" cols="50"></Textarea>
+                    <br>
 
                 </td>
 
             </tr>
             <tr>
                 <td> </td>
-                <td> <input type="submit" value="Complete Reservation"></td>
+                <td> <input type="submit" value="Complete Reservation"
+                        style="background-color: #797373;color: white;padding: 15px 30px;border-radius: 4px;"></td>
 
             </tr>
 

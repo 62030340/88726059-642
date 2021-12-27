@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+  header {
+    background-color: rgb(142, 122, 255);
+    padding: 1px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(31, 24, 39);
+  }
+  .header1 {
+    background-color: rgb(255, 233, 233);
+    padding: 1px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(44, 0, 241);
+  }
+  
+ 
+  nav {
+    float: left;
+    width: 15%;
+    height: 650px;
+    background: #ccc;
+    padding: 20px;
+  }
+  .nav1 {
+    float: left;
+    width: 15%;
+    height: 1150px;
+    background: #ccc;
+    padding: 20px;
+  }
+  .nav2 {
+    float: left;
+    width: 15%;
+    height: 1150px; 
+    background: #ccc;
+    padding: 20px;
+  }
+  .nav3 {
+    float: left;
+    width: 15%;
+    height: 3600px; 
+    background: #ccc;
+    padding: 20px;
+  }
+ 
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 85%;
+    background-color: #f1f1f1;
+    height: 1000px; 
+  }
+  .article2 {
+    float: left;
+    padding: 20px;
+    width: 85%;
+    background-color: #f1f1f1;
+    height: 650px; 
+  }
+  .article3 {
+    float: left;
+    padding: 20px;
+    width: 85%;
+    background-color: #f1f1f1;
+    height: 3600px; 
+  }
+  
+
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+ 
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        '  main main main main main main main main  right ';
+    grid-gap: 10px;
+    background-color: #ffedf9;
+    padding: 10px;
+}
+div h1 {
+  color:#3333FF;
+}
+div hr {
+  size:5 ;
+  color:#00CC00
+}
+.gallery{
+    padding: 1px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+.desc{
+  text-align: center;
+}
+.desc1{
+  text-align: left;
+}

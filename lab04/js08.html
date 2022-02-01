@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image rollove</title>
+    <script LANGUAGE="JavaScript">
+        function highlightdocs() {
+            if (document.images) {
+                document.images["docs"].src = docsOn.src;
+            }
+        }
+
+        function unhighlightdocs() {
+            if (document.images) {
+                document.images["docs"].src = docsOff.src;
+            }
+        }
+        if (document.images) {
+            docsOn = new Image();
+            docsOn.src = "gg_color.png";
+            docsOff = new Image();
+            docsOff.src = "gg_gray.png";
+        }
+    </script>
+</head>
+
+<body>
+    <p>
+        <a href="http://www.google.com" onmouseover="highlitdocs()" onmouseout="unhighlightdocs()">
+            <img src="gg_color.png" name=docs height="25" width="25" border=0>
+        </a>
+    </p>
+</body>
+
+</html>

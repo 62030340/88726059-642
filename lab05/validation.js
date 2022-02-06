@@ -29,7 +29,7 @@ function formValidation() {
 
 function validateUserID(uid, min, max) {
   var error = "";
-  var illegalChars = /\W/; //allow letters, numbers, and underscores
+  var illegalChars = /\W/; //allow letters, numbers, underscores
 
   if (uid.value == "") {
     uid.style.background = "Yellow";

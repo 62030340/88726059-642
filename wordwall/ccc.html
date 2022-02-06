@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> CCC Wordwall</title>
+
+  <link href="wordwallCS.css" type="text/css" rel="stylesheet" />
+  <script src="wordJS.js"></script>
+</head>
+
+<body onload="document.registform.userword.focus();">
+  
+  <form method="post" name="registform" onsubmit="return formValidation();">
+    
+    <h1>JavaScript For Wordwall</h1>
+    <h3>กรุณากรอกอักษรภาษาอังกฤษ ตัวพิมพ์ใหญ่ 5 ตัวอักษร</h3>
+    <input type="text" id="userword">
+    <input class="myDiv" type="button" value="Go" onClick="return formValidation();">
+    <input class="myDiv1" type="button" value="New" onClick=myFunction()>
+    <input class="myDiv1" type="button" value="NO" onClick=rand()>
+     <br><a class="a2"> _*    หมายถึงไม่มีตัวอักษร</a>
+     <br><a class="a1"> _!    หมายถึงมีตัวอักษรแต่อยู่ผิดตำแหน่ง</a>
+    <p id="SHOW"  ></p>
+    <div id="hist" ></div>
+
+    <table align="center" id="myTr1" border="1"></table>
+
+    <div align="center" id="myTr" > </div>
+    <div align="center" id="myTable" > </div>
+    <div id="result" ></div>
+    
+
+  </form>
+
+
+</body>
+
+</html>

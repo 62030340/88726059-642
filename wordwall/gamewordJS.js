@@ -93,6 +93,6 @@ function PLAY() {
   if (check == random_vocab) {
     result.innerHTML = "<p> YOU WIN </p>";
   } else {
-    result.innerHTML = "<p>อีกครั้ง</p>";
+    result.innerHTML = "<p>ลองอีกครั้ง</p>";
   }
 }

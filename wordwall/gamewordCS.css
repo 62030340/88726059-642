@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+  }
+    
+    p1, h3{
+      color:Tomato;
+    }
+    h1{
+      color:rgb(39, 0, 168);
+    }
+    .myDiv {
+      border: 1px outset rgb(10, 0, 42);
+      background-color: rgb(147, 255, 140);    
+      text-align: center;
+    }
+    .myDiv1 {
+      border: 1px outset rgb(10, 0, 42);
+      background-color: rgb(255, 140, 220);    
+      text-align: center;
+    }

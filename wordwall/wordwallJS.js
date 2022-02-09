@@ -1,8 +1,11 @@
 function formValidation() {
   var uword = document.registform.userword;
+  // console.log( uword);
   if (validateUserWord(uword, 5)) {
     if (allLetter(uword)) {
       if (gogame(uword)) {
+        if (C_RUN(CR)) {
+        }
       }
     }
   }
@@ -63,13 +66,12 @@ const game_vocabulary = [
 ];
 const random_game_vocabulary =
   game_vocabulary[Math.floor(Math.random() * game_vocabulary.length)];
-
-document.getElementById("userword").focus();
+  // document.getElementById("userword").focus();
 
 function gogame() {
+  
   console.log(random_game_vocabulary);
   let text = "";
-
   document.getElementById("SHOW").innerHTML = text; // คำตอบ
   n = document.getElementById("userword").value;
   h = document.getElementById("hist");
@@ -122,3 +124,7 @@ function gogame() {
 
 //   onClick="return formValidation()";
 // }
+
+function C_RUN(){
+    if(CK == 6){location.reload();}
+    }

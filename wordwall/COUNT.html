@@ -1,0 +1,38 @@
+<head>
+
+    <script language="JavaScript">
+
+        var count = 0;
+
+        function mycount() {
+
+            count += 1;
+
+            if(count > 5 ){
+                count = 0
+                f.myText.value = count * 0;
+            }else{
+                f.myText.value = count;
+            }
+
+            
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <form>
+
+        <input type="text" name="myText" value=""><br>
+
+        <input type="button" name="myBut" value="Click" onClick="mycount(form)">
+
+    </form>
+
+</body>
+
+</html>

@@ -2,7 +2,9 @@ function formGAME() {
   var uword = document.registform.userword;
   if (validateUserWord(uword, 5)) {
     if (allLetter(uword)) {
-      if (PLAY(uword)) {
+      if (mycount(5)) {
+        if (PLAY(uword)) {
+        }
       }
     }
   }
@@ -64,6 +66,36 @@ const vocab = [
 
 const random_vocab = vocab[Math.floor(Math.random() * vocab.length)];
 
+var count = 0;
+function mycount() {
+  sh = document.getElementById("show");
+  count += 1;
+  check = document.getElementById("userword").value;
+  OVERGAME = document.getElementById("OVERGAME");
+  if (count < 6) {
+    if (check == random_vocab) {
+      WIN = " YOU WIN !!! \n";
+      alert(WIN);
+    } else {
+      AGAIN = " AGAIN ลองอีกครั้ง !!! \n";
+      alert(AGAIN);
+    }
+  } else {
+    if (count == 6) {
+      sh.innerHTML = "<p> จบเกมคุณแพ้ เริ่มเกมใหม่อีกครั้ง</p>";
+      LOSE = " YOU LOSE !!! \n";
+      alert(LOSE);
+    } else {
+      sh.innerHTML = "<p> เริ่มเกมใหม่อีกครั้ง</p>";
+      LOSE = " NEW GAME !!! \n";
+      alert(LOSE);
+      location.reload();
+      
+    }
+  }
+  return true;
+}
+
 function PLAY() {
   console.log(random_vocab);
 
@@ -95,4 +127,8 @@ function PLAY() {
   } else {
     result.innerHTML = "<p>ลองอีกครั้ง</p>";
   }
+}
+
+function NEW() {
+  location.reload();
 }

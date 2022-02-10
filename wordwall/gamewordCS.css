@@ -13,11 +13,11 @@ body {
       background-color: rgb(147, 255, 140);    
       text-align: center;
     }
-    /* .myDiv1 {
+    .myDiv1 {
       border: 1px outset rgb(10, 0, 42);
       background-color: rgb(255, 140, 220);    
       text-align: center;
-    } */
+    }
     .a2{
       color:rgba(255, 1, 1, 0.938);
     }

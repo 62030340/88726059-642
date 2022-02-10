@@ -124,15 +124,15 @@ function PLAY() {
 
     if (random_vocab.includes(get_kum.slice(i, i + 1))) {
       if (get_kum.slice(i, i + 1) == random_vocab.slice(i, i + 1)) {
-        SHOW = get_kum.slice(i, i + 1);
+        SHOW = "<span class ='myG1' >"+ get_kum.slice(i, i + 1) + "</span>";
       } else {
-        SHOW = get_kum.slice(i, i + 1) + "?";
+        SHOW = "<span class ='myY2' >" + get_kum.slice(i, i + 1)  +"</span>";
       }
     } else {
-      SHOW = get_kum.slice(i, i + 1) + " ! ";
+      SHOW = "<span class ='myR3' >"+ get_kum.slice(i, i + 1) + "</span>" ;
     }
 
-    h.innerHTML += " [ " + SHOW + " ] ";
+    h.innerHTML +=  SHOW ;
   }
   h.innerHTML += "<br>";
 

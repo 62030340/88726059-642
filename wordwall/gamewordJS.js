@@ -1,7 +1,6 @@
 function formGAME() {
-
   var uword = document.registform.userword;
-  
+
   if (validateUserWord(uword, 5)) {
     if (allLetter(uword)) {
       if (mycount(5)) {
@@ -42,10 +41,9 @@ function validateUserWord(uword, numword) {
 }
 
 function allLetter(uword) {
-  
-  var u2word  = document.getElementById("userword").value.toUpperCase();
-  var uword = u2word
-  console.log(uword );
+  var u2word = document.getElementById("userword").value.toUpperCase();
+  var uword = u2word;
+  console.log(uword);
   return true;
   // var letters = /^[A-Z]+$/;
   // if (uword.value.match(letters)) {
@@ -75,8 +73,8 @@ const random_vocab = vocab[Math.floor(Math.random() * vocab.length)];
 
 var count = 0;
 function mycount() {
-  var u2word  = document.getElementById("userword").value.toUpperCase();
-  var uword = u2word
+  var u2word = document.getElementById("userword").value.toUpperCase();
+  var uword = u2word;
   sh = document.getElementById("show");
   count += 1;
   check = document.getElementById("userword").value.toUpperCase();
@@ -84,8 +82,7 @@ function mycount() {
   if (count < 6) {
     get_kum = document.getElementById("userword").value.toUpperCase();
     if (check == random_vocab) {
-     
-      WIN = get_kum +" ถูกต้อง "+ " YOU WIN !!! \n";
+      WIN = get_kum + " ถูกต้อง " + " YOU WIN !!! \n";
       alert(WIN);
 
       if (check == random_vocab) {
@@ -95,7 +92,7 @@ function mycount() {
         location.reload();
       }
     } else {
-      AGAIN = get_kum +" ไม่ถูกต้อง " + " ลองอีกครั้ง !!! \n";
+      AGAIN = get_kum + " ไม่ถูกต้อง " + " ลองอีกครั้ง !!! \n";
       alert(AGAIN);
     }
   } else {
@@ -115,11 +112,10 @@ function mycount() {
 
 function PLAY() {
   console.log(random_vocab);
-  
 
   for (i = 0; i < 5; i++) {
-    var u2word  = document.getElementById("userword").value.toUpperCase();
-    var uword = u2word
+    var u2word = document.getElementById("userword").value.toUpperCase();
+    var uword = u2word;
     h = document.getElementById("hist");
     get_kum = document.getElementById("userword").value.toUpperCase();
     // console.log(get_kum);

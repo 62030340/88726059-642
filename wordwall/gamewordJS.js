@@ -1,5 +1,7 @@
 function formGAME() {
+
   var uword = document.registform.userword;
+  
   if (validateUserWord(uword, 5)) {
     if (allLetter(uword)) {
       if (mycount(5)) {
@@ -40,15 +42,20 @@ function validateUserWord(uword, numword) {
 }
 
 function allLetter(uword) {
-  var letters = /^[A-Z]+$/;
-  if (uword.value.match(letters)) {
-    return true;
-  } else {
-    uword.style.background = "Yellow";
-    alert(" ต้องเป็นตัวอักษร ตัวใหญ่ เท่านั้น");
-    uword.focus();
-    return false;
-  }
+  
+  var u2word  = document.getElementById("userword").value.toUpperCase();
+  var uword = u2word
+  console.log(uword );
+  return true;
+  // var letters = /^[A-Z]+$/;
+  // if (uword.value.match(letters)) {
+  //   return true;
+  // } else {
+  //   uword.style.background = "Yellow";
+  //   alert(" ต้องเป็นตัวอักษร ตัวใหญ่ เท่านั้น");
+  //   uword.focus();
+  //   return false;
+  // }
 }
 
 const vocab = [
@@ -68,16 +75,27 @@ const random_vocab = vocab[Math.floor(Math.random() * vocab.length)];
 
 var count = 0;
 function mycount() {
+  var u2word  = document.getElementById("userword").value.toUpperCase();
+  var uword = u2word
   sh = document.getElementById("show");
   count += 1;
-  check = document.getElementById("userword").value;
+  check = document.getElementById("userword").value.toUpperCase();
   OVERGAME = document.getElementById("OVERGAME");
   if (count < 6) {
+    get_kum = document.getElementById("userword").value.toUpperCase();
     if (check == random_vocab) {
-      WIN = " YOU WIN !!! \n";
+     
+      WIN = get_kum +" ถูกต้อง "+ " YOU WIN !!! \n";
       alert(WIN);
+
+      if (check == random_vocab) {
+        sh.innerHTML = "<p> เริ่มเกมใหม่อีกครั้ง</p>";
+        LOSE = " NEW GAME !!! \n";
+        alert(LOSE);
+        location.reload();
+      }
     } else {
-      AGAIN = " AGAIN ลองอีกครั้ง !!! \n";
+      AGAIN = get_kum +" ไม่ถูกต้อง " + " ลองอีกครั้ง !!! \n";
       alert(AGAIN);
     }
   } else {
@@ -90,7 +108,6 @@ function mycount() {
       LOSE = " NEW GAME !!! \n";
       alert(LOSE);
       location.reload();
-      
     }
   }
   return true;
@@ -98,10 +115,14 @@ function mycount() {
 
 function PLAY() {
   console.log(random_vocab);
+  
 
   for (i = 0; i < 5; i++) {
+    var u2word  = document.getElementById("userword").value.toUpperCase();
+    var uword = u2word
     h = document.getElementById("hist");
-    get_kum = document.getElementById("userword").value;
+    get_kum = document.getElementById("userword").value.toUpperCase();
+    // console.log(get_kum);
     SHOW = " ";
     console.log(get_kum.slice(i, i + 1));
 

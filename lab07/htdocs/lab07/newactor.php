@@ -20,7 +20,7 @@ if ($_POST){
             INTO actor (first_name, last_name,Email) 
             VALUES (?, ?,?)";
     $stmt = $mysqli->prepare($sql);
-    $stmt->bind_param("ss", $fname, $lname,$Email);
+    $stmt->bind_param("sss", $fname, $lname,$Email);
     $stmt->execute();
 
     // redirect ไปยัง actor.php

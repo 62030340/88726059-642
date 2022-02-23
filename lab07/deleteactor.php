@@ -54,6 +54,11 @@ if ($_POST){
                 <th>Last name</th>
                 <td><?php echo $row->last_name;?></td>
             </tr>
+            
+            <tr>
+                <th>Email</th>
+                <td><?php echo $row->Email;?></td>
+            </tr>
             <tr>
                 <th>Last update</th>
                 <td><?php echo $row->last_update;?></td>

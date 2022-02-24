@@ -1,8 +1,8 @@
 <?php
 // ตั้งค่าตัวแปรสำหรับเชื่อมต่อฐานข้อมูล
-$db_host = "localhost";
-$db_user = "root@172.20.0.5";
-$db_password = "12345";
+$db_host = "database";
+$db_user = "root";
+$db_password = "tiger";
 $db_name = "testdb";
 
 // connect ไปยังฐานข้อมูล

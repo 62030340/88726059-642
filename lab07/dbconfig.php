@@ -1,7 +1,7 @@
 <?php
 // ตั้งค่าตัวแปรสำหรับเชื่อมต่อฐานข้อมูล
 $db_host = "localhost";
-$db_user = "root@172.20.0.5";
+$db_user = "root";
 $db_password = "12345";
 $db_name = "testdb";
 

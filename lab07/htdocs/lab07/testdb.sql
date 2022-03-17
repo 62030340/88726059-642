@@ -40,19 +40,15 @@ CREATE TABLE `actor` (
 --
 
 INSERT INTO `actor` (`actor_id`, `first_name`, `last_name`, `last_update`, `Email`) VALUES
-(1, 'PENELOPE', 'GUINESS', '2022-02-23 17:32:31', 'PENELOPE@testmail.ac.th'),
-(2, 'NICK', 'WAHLBERG', '2022-02-23 17:34:21', 'NICK@testmail.ac.th'),
-(3, 'ED', 'CHASE', '2022-02-23 17:33:22', 'ED@testmail.ac.th'),
-(4, 'JENNIFER', 'DAVIS', '2022-02-23 17:33:44', 'JENNIFER@testmail.ac.th'),
-(5, 'JOHNNY', 'LOLLOBRIGIDA', '2022-02-23 17:34:01', 'JOHNNY@testmail.ac.th'),
-(6, 'BETTE', 'NICHOLSON3', '2022-02-23 17:33:03', 'BETTE@testmail.ac.th'),
-(7, 'GRACE', 'MOSTEL', '2022-02-23 17:33:34', 'GRACE@testmail.ac.th'),
-(8, 'MATTHEW', 'JOHANSSON', '2022-02-23 17:34:09', 'MATTHEW@testmail.ac.th'),
-(9, 'JOE', 'SWANK', '2022-02-23 17:33:52', 'JOE@testmail.ac.th'),
-(10, 'CHRISTIAN', 'GABLE', '2022-02-23 17:33:11', 'CHRISTIAN@testmail.ac.th'),
-(12, 'SITTIPON', 'ZANGf', '2022-02-23 17:31:36', 'ZANGdd@gmail.com'),
-(15, 'SITTIPON', 'SITTIPON', '2022-02-23 17:32:41', 'SITTIPON@testmail.ac.th'),
-(16, 'IZHABIT', 'YCN', '2022-02-23 17:34:50', 'ADMIN@testmail.ac.th');
+(1, 'PENELOPE', 'GUINESS', '2022-02-23 17:32:31', 'PENELOPE@actormail.ac.th'),
+(2, 'NICK', 'WAHLBERG', '2022-02-23 17:34:21', 'NICK@actormail.ac.th'),
+(3, 'ED', 'CHASE', '2022-02-23 17:33:22', 'ED@actormail.ac.th'),
+(4, 'JENNIFER', 'DAVIS', '2022-02-23 17:33:44', 'JENNIFER@actormail.ac.th'),
+(5, 'JOHNNY', 'LOLLOBRIGIDA', '2022-02-23 17:34:01', 'JOHNNY@actormail.ac.th'),
+(6, 'BETTE', 'NICHOLSON3', '2022-02-23 17:33:03', 'BETTE@actormail.ac.th'),
+(7, 'GRACE', 'MOSTEL', '2022-02-23 17:33:34', 'GRACE@actormail.ac.th'),
+(8, 'MATTHEW', 'JOHANSSON', '2022-02-23 17:34:09', 'MATTHEW@actormail.ac.th'),
+(9, 'JOE', 'SWANK', '2022-02-23 17:33:52', 'JOE@actormail.ac.th');
 
 --
 -- Indexes for dumped tables

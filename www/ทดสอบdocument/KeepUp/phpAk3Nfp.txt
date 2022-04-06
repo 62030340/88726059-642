@@ -1,0 +1,29 @@
+# เขียนโดย นาย วรรณพงษ์ ภัททิยไพบูลย์
+# https://python3.wannaphong.com
+word="แมว"
+mylist = list(word)
+mylist1 = mylist.copy()
+mylist2 = ["_"]*len(mylist)
+wrong=0
+num=len(mylist)
+numtrue=0
+while wrong!=num*2:
+	if numtrue<num:
+		print("ผิดแล้ว : %d จาก %d ครั้ง" % (wrong,num*2))
+		text=input(" ".join(mylist2)+": ")
+		if text in mylist:
+			print('ตัวนี้ถูกแล้ว :)')
+			mylist2[mylist1.index(text)]=text # หาตำแหน่ง index จาก mylist1 เพื่อแทนที่ตำแหน่ง _ ใน mylist2
+			del(mylist[mylist.index(text)]) # ลบเพื่อป้องกันการกรอกซ้ำอีก
+			numtrue+=1 # ถูกเพิ่มอีก 1
+		else:
+			print('ตัวนี้ผิด !')
+			wrong+=1 # เพิ่มจำนวนการผิด
+	else:
+		wrong=num*2
+if numtrue==num:
+	print('\nคุณชนะ เย้ ๆ  ^_^\n')
+else:
+	print('\nคุณแพ้ :(\n')
+print("คำทั้งหมดคือ %s \nจบเกม ^_^" % "".join(mylist1))
+input()

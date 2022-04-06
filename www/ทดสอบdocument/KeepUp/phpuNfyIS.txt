@@ -1,0 +1,272 @@
+     ┌────────────────────────────────────────────────────────────────────┐
+     │                • MobaXterm Personal Edition v21.5 •                │
+     │              (X server, SSH client and network tools)              │
+     │                                                                    │
+     │ ➤ Your computer drives are accessible through the /drives path     │
+     │ ➤ Your DISPLAY is set to 10.30.43.15:0.0                           │
+     │ ➤ When using SSH, your remote DISPLAY is automatically forwarded   │
+     │ ➤ Each command status is specified by a special symbol (✔ or ✘)    │
+     │                                                                    │
+     │ • Important:                                                       │
+     │ This is MobaXterm Personal Edition. The Professional edition       │
+     │ allows you to customize MobaXterm for your company: you can add    │
+     │ your own logo, your parameters, your welcome message and generate  │
+     │ either an MSI installation package or a portable executable.       │
+     │ We can also modify MobaXterm or develop the plugins you need.      │
+     │ For more information: https://mobaxterm.mobatek.net/download.html  │
+     └────────────────────────────────────────────────────────────────────┘
+
+  04/02/2022   17:15.57   /home/mobaxterm  SSH 62030340@dekwat.buu.in.th
+Warning: Permanently added 'dekwat.buu.in.th' (RSA) to the list of known hosts.
+62030340@dekwat.buu.in.th's password:
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.4.0-89-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Fri 04 Feb 2022 05:16:38 PM +07
+
+  System load:                      0.61
+  Usage of /:                       47.2% of 187.99GB
+  Memory usage:                     78%
+  Swap usage:                       4%
+  Processes:                        1081
+  Users logged in:                  6
+  IPv4 address for br-075d40e21819: 10.200.82.1
+  IPv4 address for br-09e366f50bd0: 10.200.113.1
+  IPv4 address for br-1cf7e94f0ee2: 10.200.62.1
+  IPv4 address for br-2d28cc1fc9e5: 10.200.75.1
+  IPv4 address for br-32c82f654cc3: 10.200.63.1
+  IPv4 address for br-34fe0a781ba7: 10.200.104.1
+  IPv4 address for br-361adcb43cdc: 10.200.69.1
+  IPv4 address for br-3f04cc5318b6: 10.200.5.1
+  IPv4 address for br-3faa249a08da: 10.200.130.1
+  IPv4 address for br-65b24e28b585: 10.200.67.1
+  IPv4 address for br-66f715f30f26: 10.200.106.1
+  IPv4 address for br-7c76e5b2713a: 10.200.87.1
+  IPv4 address for br-82de47e67aa3: 10.200.111.1
+  IPv4 address for br-85378da019a9: 10.200.120.1
+  IPv4 address for br-8551f6ffb2e2: 10.200.65.1
+  IPv4 address for br-8dfb29320598: 10.200.121.1
+  IPv4 address for br-8f1ee8829ce1: 10.200.78.1
+  IPv4 address for br-a0ac7864ac74: 10.200.94.1
+  IPv4 address for br-a37e8a7f6168: 10.200.66.1
+  IPv4 address for br-a54076558ee5: 10.200.116.1
+  IPv4 address for br-a629cba6993d: 10.200.51.1
+  IPv4 address for br-a96943acd05c: 10.200.85.1
+  IPv4 address for br-b02e1a9720bc: 10.200.89.1
+  IPv4 address for br-b75174a8674c: 10.200.107.1
+  IPv4 address for br-bddad409673f: 10.200.126.1
+  IPv4 address for br-c62a1f45ee68: 10.200.100.1
+  IPv4 address for br-ca27c36d8b86: 10.200.80.1
+  IPv4 address for br-cddf08ee66f6: 10.200.83.1
+  IPv4 address for br-d2207ff7406b: 10.200.119.1
+  IPv4 address for br-d2fa2979b99a: 10.200.31.1
+  IPv4 address for br-d491127db844: 10.200.127.1
+  IPv4 address for br-d5ba02b88ef2: 10.200.76.1
+  IPv4 address for br-d6a790512354: 10.200.10.1
+  IPv4 address for br-d8342c74ad03: 10.200.95.1
+  IPv4 address for br-f2054e4ab2de: 10.200.98.1
+  IPv4 address for br-f664a3771abb: 10.200.64.1
+  IPv4 address for br-fb2387dcdf35: 10.200.91.1
+  IPv4 address for docker0:         10.200.0.1
+  IPv4 address for ens18:           10.80.6.64
+
+  => There are 2 zombie processes.
+
+
+3 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+
+*** System restart required ***
+Last login: Fri Jan 28 17:30:15 2022 from 10.30.43.40
+62030340@dekwat:~$ ls -l
+total 16
+drwxrwxrwx 14 bitnami  bitnami 4096 Jan 21 17:09 app
+drwxrwxrwx  2 root     root    4096 Jan 28 19:20 data
+-rw-r--r--  1 62030340 student 1049 Dec 17 17:21 docker-compose.yml
+drwxr-xr-x  8 docker   root    4096 Jan 28 17:42 mysql
+62030340@dekwat:~$ cd data/
+62030340@dekwat:~/data$ cp /home/88735059/createtable.sql  ./
+62030340@dekwat:~/data$ ls -l
+total 224
+-rw-rw-rw- 1 62030340 student    276 Jan 28 18:21 CountOrderByStatus.sql
+-rwxr--r-- 1 62030340 student    983 Feb  4 17:19 createtable.sql
+-rw-rw-rw- 1 62030340 student    547 Jan 28 19:15 GetCustomerLavel.sql
+-rw-rw-rw- 1 62030340 student    547 Jan 28 19:16 GetCustomerLevel.sql
+-rw-rw-rw- 1 62030340 student    224 Jan 28 18:03 GetOfficeByCountry.sql
+-rw-rw-rw- 1 62030340 student 202041 Jan 28 17:37 sampledb.sql
+-rw-rw-rw- 1 62030340 student    185 Jan 28 18:25 set_counter.sql
+62030340@dekwat:~/data$ docker exec -it DB62030340 /bin/bash
+root@03a8a56582f5:/# cd
+root@03a8a56582f5:~# ls -l
+total 224
+-rw-rw-rw- 1 62030340 1007    276 Jan 28 11:21 CountOrderByStatus.sql
+-rw-rw-rw- 1 62030340 1007    547 Jan 28 12:15 GetCustomerLavel.sql
+-rw-rw-rw- 1 62030340 1007    547 Jan 28 12:16 GetCustomerLevel.sql
+-rw-rw-rw- 1 62030340 1007    224 Jan 28 11:03 GetOfficeByCountry.sql
+-rwxr--r-- 1 62030340 1007    983 Feb  4 10:19 createtable.sql
+-rw-rw-rw- 1 62030340 1007 202041 Jan 28 10:37 sampledb.sql
+-rw-rw-rw- 1 62030340 1007    185 Jan 28 11:25 set_counter.sql
+root@03a8a56582f5:~# mysql -u root -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1322
+Server version: 5.7.34 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql>
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| HRIS               |
+| mysql              |
+| performance_schema |
+| sales              |
+| sampledb           |
+| sys                |
++--------------------+
+7 rows in set (0.00 sec)
+
+mysql> create database account;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use account;
+Database changed
+mysql> source createtable.sql;
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from account;
+ERROR 1146 (42S02): Table 'account.account' doesn't exist
+mysql> select * from Account;
++--------+----------+-------------+---------------------+---------+
+| ACC_No | ACC_Name | ACC_Surname | DateOp              | Balance |
++--------+----------+-------------+---------------------+---------+
+| ACC001 | Wittawas | Kanprapun   | 2022-02-04 10:25:16 |    1536 |
+| ACC002 | Kanjana  | Panupan     | 2022-02-04 10:25:16 |    4322 |
+| ACC003 | Prapun   | Vitchaya    | 2022-02-04 10:25:16 |   20192 |
+| ACC004 | Benya    | Ngamprakai  | 2022-02-04 10:25:16 |    2294 |
+| ACC005 | Panuwat  | Wannapanit  | 2022-02-04 10:25:16 |    5682 |
++--------+----------+-------------+---------------------+---------+
+5 rows in set (0.00 sec)
+
+mysql> \! ls
+CountOrderByStatus.sql  GetCustomerLavel.sql  GetCustomerLevel.sql  GetOfficeByCountry.sql  TransferTrigger.sql  createtable.sql  sampledb.sql  set_counter.sql
+mysql> source TransferTrigger.sql;
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERT ON Account
+    FOR EACH ROW
+BEGIN
+    IF (New.Acc_Name IS NOT NULL) THEN
+' at line 1
+mysql> source TransferTrigger.sql;
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+mysql>
+mysql> INSERT INTO Account VALUESS('ACC006','TOKTAK','WACHIRAHATTHAPONG',now(),5000);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VALUESS('ACC006','TOKTAK','WACHIRAHATTHAPONG',now(),5000)' at line 1
+mysql> INSERT INTO Account VALUES('ACC006','TOKTAK','WACHIRAHATTHAPONG',now(),5000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from Account;
++--------+----------+-------------------+---------------------+---------+
+| ACC_No | ACC_Name | ACC_Surname       | DateOp              | Balance |
++--------+----------+-------------------+---------------------+---------+
+| ACC001 | Wittawas | Kanprapun         | 2022-02-04 10:25:16 |    1536 |
+| ACC002 | Kanjana  | Panupan           | 2022-02-04 10:25:16 |    4322 |
+| ACC003 | Prapun   | Vitchaya          | 2022-02-04 10:25:16 |   20192 |
+| ACC004 | Benya    | Ngamprakai        | 2022-02-04 10:25:16 |    2294 |
+| ACC005 | Panuwat  | Wannapanit        | 2022-02-04 10:25:16 |    5682 |
+| ACC006 | TOKTAK   | WACHIRAHATTHAPONG | 2022-02-04 11:02:03 |    5000 |
++--------+----------+-------------------+---------------------+---------+
+6 rows in set (0.00 sec)
+
+mysql> \! ls
+AccountTransfer.sql  CountOrderByStatus.sql  GetCustomerLavel.sql  GetCustomerLevel.sql  GetOfficeByCountry.sql  TransferTrigger.sql  createtable.sql  sampledb.sql  set_counter.sql
+mysql> source AccountTransfer.sql;
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> INSERT INTO Account VALUES('ACC099','ICN','IZHABIT',now(),99999);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from Account;
++--------+----------+-------------------+---------------------+---------+
+| ACC_No | ACC_Name | ACC_Surname       | DateOp              | Balance |
++--------+----------+-------------------+---------------------+---------+
+| ACC001 | Wittawas | Kanprapun         | 2022-02-04 10:25:16 |    1536 |
+| ACC002 | Kanjana  | Panupan           | 2022-02-04 10:25:16 |    4322 |
+| ACC003 | Prapun   | Vitchaya          | 2022-02-04 10:25:16 |   20192 |
+| ACC004 | Benya    | Ngamprakai        | 2022-02-04 10:25:16 |    2294 |
+| ACC005 | Panuwat  | Wannapanit        | 2022-02-04 10:25:16 |    5682 |
+| ACC006 | TOKTAK   | WACHIRAHATTHAPONG | 2022-02-04 11:02:03 |    5000 |
+| ACC099 | ICN      | IZHABIT           | 2022-02-04 11:22:47 |   99999 |
++--------+----------+-------------------+---------------------+---------+
+7 rows in set (0.00 sec)
+
+mysql> source AccountTransfer.sql;
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> INSERT INTO Transfer(ACC_NoSource,ACC_No_dest,DateOp,Amount)
+    -> VALUES('ACC006','ACC099',now(),999);
+ERROR 1054 (42S22): Unknown column 'ACC_NoSource' in 'field list'
+mysql> INSERT INTO Transfer(ACC_No_Source,ACC_No_dest,DateOp,Amount) VALUES('ACC006','ACC099',now(),999);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from Account;
++--------+----------+-------------------+---------------------+---------+
+| ACC_No | ACC_Name | ACC_Surname       | DateOp              | Balance |
++--------+----------+-------------------+---------------------+---------+
+| ACC001 | Wittawas | Kanprapun         | 2022-02-04 10:25:16 |    1536 |
+| ACC002 | Kanjana  | Panupan           | 2022-02-04 10:25:16 |    4322 |
+| ACC003 | Prapun   | Vitchaya          | 2022-02-04 10:25:16 |   20192 |
+| ACC004 | Benya    | Ngamprakai        | 2022-02-04 10:25:16 |    2294 |
+| ACC005 | Panuwat  | Wannapanit        | 2022-02-04 10:25:16 |    5682 |
+| ACC006 | TOKTAK   | WACHIRAHATTHAPONG | 2022-02-04 11:02:03 |    4001 |
+| ACC099 | ICN      | IZHABIT           | 2022-02-04 11:22:47 |  100998 |
++--------+----------+-------------------+---------------------+---------+
+7 rows in set (0.00 sec)
+
+mysql> \! ls
+AccountTransfer.sql  CountOrderByStatus.sql  CreateTableDW.sql  GetCustomerLavel.sql  GetCustomerLevel.sql  GetOfficeByCountry.sql  TransferTrigger.sql  createtable.sql  sampledb.sql  set_counter.sql
+mysql> ^C
+mysql> source CreateTableDW.sql;
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+mysql>
+e

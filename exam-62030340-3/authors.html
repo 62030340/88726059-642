@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Authors</title>
+    <script>
+       var authors = [
+                { authorsID: "1111", authors: "sittipon", penname: "บ้านหนองหญ้าปล้อง" },
+                { authorsID: "1112", authors: "chinno", penname: "A ต้องมาแล้วครับ" },
+                { authorsID: "1113", authors: "tharadon", penname: "ชาบูก็หิวโปรเจ็คก็ต้องทำ" }
+            ];
+        </script>
+
+</head>
+
+
+<body>
+    <h1> Authors</h1>
+    <form action="authors.html" method="post">
+        <label for="authorsID">รหัสผู้แต่ง:</label><br>
+        <input type="text" name="newauthorsID" placeholder="รหัสผู้แต่ง"><br>
+        <label for="authors">ชื่อผู้แต่ง:</label><br>
+        <input type="text" name="newauthors" placeholder="ชื่อผู้แต่ง"><br>
+        <label for="penname">นามปากกา:</label><br>
+        <input type="text" name="newpenname" placeholder="นามปากกา"> <br> <br>
+        <input type="submit"   value="บันทึก">
+    </form>
+   
+
+    <script>
+        function Addauthors() {
+            authors.push({ authorsID: 11, authors: "newauthors", penname: "newauthors" });
+        }
+    </script>
+        
+    <br>
+    <h1>ผู้แต่ง</h1>
+    
+    <br>
+    <a href="#" id="more" onclick="show()">Show </a>
+    <br>
+    <span id="text" style="display: none">
+        
+
+
+
+
+
+        <script>
+           
+           authors.push({ authorsID: 1115, authors: 'helloagain_again', penname: 'another' });
+            // alerts.push({authorsID : 3, authors:'helloagain_again',penname:'yet another message'});
+            for (i = 0; i < authors.length; i++) {
+                
+                document.write("<tr>");
+                document.write("รหัส      : " + authors[i].authorsID + "<br>");
+                document.write("ชื่อ      : " + authors[i].authors + "<br>");
+                document.write("นามปากกา      : " + authors[i].penname + "<br>");
+                document.write("<hr>");
+
+
+
+            }
+
+        </script>
+        <script>
+            function show() {
+                document.getElementById("text").style.display = "inline";
+                document.getElementsById("more").style.display = "none";
+            }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+</head>
+
+<body>
+    <table border="1" width="40%" text-align: center;>
+        <!-- <tr>
+            <td colspan="2" align="center">
+                <h1>Movie</h1>
+            </td>
+        </tr> -->
+        <tr>
+            <td>
+                <p3> # </p3>
+            </td>
+            <td style="text-align: center">
+                <p3> ชื่อภาพยนต์ </p3>
+            </td>
+            <td style="text-align: center">
+                <p3> รายได้รวม </p3>
+            </td>
+        </tr>
+
+
+
+        <!-- <p id="rtitlemovie"></p>
+        <p id="rmovieprice"></p> -->
+        <script>
+            titlemovie = ["Avengers: Endgame", "The Lion King", "Star Wars: The Rise of Skywalker", "Frozen II", "Toy Story 4"];
+            movieprice = [858373000, 543638043, 451582256, 450439533, 434038008];
+
+            $sumtotol = 0;
+            function formatNumber(num) {
+                return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+
+            }
+            for (i = 0; i < titlemovie.length; i++) {
+                document.write("<tr>");
+                document.write("<td>" + (i + 1) + "</td>");
+                document.write("<td>" + titlemovie[i] + "</td>");
+                document.write("<td align ='center'>" + formatNumber(movieprice[i]) + "</td>");
+                document.write("</tr>");
+                $sumtotol += movieprice[i];
+            }
+
+            document.write("<tr>");
+            document.write("<td colspan='2' align ='center'><b>รวม</b></td>");
+            document.write("<td align ='center' >" + formatNumber($sumtotol) + "</td>");
+            document.write("</tr>");
+
+            document.write("</table>");
+        // document.getElementById("rtitlemovie").innerHTML = titlemovie[0] + " ราคา " + formatNumber(movieprice[0]);
+        // document.getElementById("rmovieprice").innerHTML = formatNumber(movieprice[0]);
+        </script>
+</body>
+
+</html>

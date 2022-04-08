@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+Welcome to the "Show More Text Example"
+<a href="#" id="more" 
+onclick="show()">Click HERE to Read More...</a>
+<br>
+<span id="text" style="display: none">
+    <script>
+        var authors =[
+       { authorsID: "1111",authors: "sittipon", penname: "บ้านหนองหญ้าปล้อง" },
+       { authorsID: "1112",authors: "chinno", penname: "A ต้องมาแล้วครับ" },
+       { authorsID: "1113",authors: "tharadon", penname: "ชาบูก็หิวโปรเจ็คก็ต้องทำ" }
+       ];
+       for (i = 0; i < authors.length; i++) {
+            document.write("<tr>");
+            document.write( "รหัส      : " + authors[i].authorsID + "<br>");
+            document.write( "ชื่อ      : " +authors[i].authors+ "<br>");
+            document.write( "นามปากกา      : " +authors[i].penname+ "<br>");
+            document.write("<hr>");
+            
+           
+        }
+    
+    </script>
+<script>
+    function show() {
+        document.getElementById("text").style.display = "inline";
+        document.getElementsById("more").style.display = "none";
+    }
+</script>
+</body>
+</html>
